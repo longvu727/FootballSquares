@@ -1,0 +1,46 @@
+services:
+  footballsquaregameservices:
+    image: footballsquaregameservices
+    build:
+      context: FootballSquareGameServices
+      dockerfile: Dockerfile
+    ports:
+      - '${PORT:-3101}:3101'
+      - '${PORT:-2101}:2101'
+
+  squaremicroservices:
+    image: squaremicroservices
+    build:
+      context: Microservices/SquareMicroservices
+      dockerfile: Dockerfile
+    ports:
+      - '${PORT:-3000}:3000'
+
+  footballsquaregamemicroservices:
+    image: footballsquaregamemicroservices
+    build:
+      context: Microservices/FootballSquareGameMicroservices
+      dockerfile: Dockerfile
+    ports:
+      - '${PORT:-3001}:3001'
+
+  gamemicroservices:
+    image: gamemicroservices
+    build:
+      context: Microservices/GameMicroservices
+      dockerfile: Dockerfile
+    ports:
+      - '${PORT:-3002}:3002'
+
+  db:
+    image: mysql
+    volumes:
+      - db-data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - "3306:3306"
+
+volumes:
+  db-data:
