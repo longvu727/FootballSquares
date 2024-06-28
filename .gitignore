@@ -1,6 +1,6 @@
-.vscode
+.*
 !/.gitignore
 FootballSquareGameServices/*
 FootballSquarePages/*
 FootballSquaresLibs/*
-Microservices/*
+./Microservices/*
