@@ -61,3 +61,5 @@ cd FootballSquarePages
 #Start server
 PORT=4000 npm start
 ```
+## Postman Collection
+[FootballSquareGame.postman_collection.json](FootballSquareGame.postman_collection.json)
