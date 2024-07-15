@@ -32,6 +32,14 @@ services:
     ports:
       - '${PORT:-3002}:3002'
 
+  usermicroservices:
+    image: usermicroservices
+    build:
+      context: Microservices/UserMicroservices
+      dockerfile: Dockerfile
+    ports:
+      - '${PORT:-3003}:3003'
+
   db:
     image: mysql
     volumes:
@@ -41,6 +49,17 @@ services:
       MYSQL_ROOT_PASSWORD: example
     ports:
       - "3306:3306"
+
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin
+    restart: always
+    ports:
+      - "8090:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: example
 
 volumes:
   db-data:
