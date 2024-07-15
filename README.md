@@ -5,7 +5,7 @@ FootballSquare is a project designed to allow friends and colleagues to easily c
 https://www.wikihow.com/Play-Football-Squares
 
 ## Why this project?
-I created this project to showcase my Golang, Docker, and React skills—proving that I could save the world!... Or a porfolio to show that my work experiences.
+I created this project to showcase my Golang, Docker, and React skills—proving that I could save the world!... Or a porfolio to show my work experiences.
 
 ## Design
 
