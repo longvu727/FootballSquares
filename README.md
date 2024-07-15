@@ -21,7 +21,7 @@ I created this project to showcase my Golang, Docker, and React skills—proving
 3. **Internal Services, Microservices**:
    * These services are domain specific service and is used as an internal APIs.  They can access DB for data.
    1. **FootballSquareGameMicroservices**
-      * Implemented *Get* and *Create*
+      * Implemented *Get*, *Create* and *ReserveSquare*
    2. **GameMicroservices**
       * Implemented *Get* and *Create*
    3. **SquareMicroservices**
