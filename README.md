@@ -28,7 +28,8 @@ I created this project to showcase my Golang, Docker, and React skills—proving
       * Implemented *Get* and *Create*
 
 ![FootballSquare Designs](FootballSquare.png)
-
+## Demo
+![FootballSquare Demo](FootballSquareDemo.gif)
 ## Installation
 ### Prerequisite
 1. npm
