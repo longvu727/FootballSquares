@@ -424,7 +424,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"ip\": \"127.0.0.1\",\r\n    \"device_name\": \"AppleWebKit/5\",\r\n    \"user_name\": \"ChiVu\",\r\n    \"alias\": \"cvu\"\r\n}",
+									"raw": "{\r\n    \"ip\": \"127.0.0.1\",\r\n    \"device_name\": \"AppleWebKit/5\",\r\n    \"user_name\": \"LongVu4\",\r\n    \"alias\": \"lvu4\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
